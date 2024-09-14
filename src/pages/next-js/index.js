@@ -3,8 +3,8 @@ import Questions from "@/constant/question";
 export default function NextJS() {
   return (
     <>
-      {Questions.map((ques) => (
-        <div>
+      {Questions.map((ques, index) => (
+        <div key={index}>
           <h3>{ques.question}</h3>
           <p>
             {ques.answer}
