@@ -7,6 +7,8 @@ export default function Home() {
       <Link href={"blog"}>Go to Blog Page</Link>
       <br />
       <Link href={"about"}>Go to About Page</Link>
+      <br/>
+      <Link href={"next-js"}>Learn</Link>
     </div>
   );
 }
