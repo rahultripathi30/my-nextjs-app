@@ -1,9 +1,20 @@
 import Link from "next/link";
-export default function About() {
+
+export async function getStaticProps() {
+  return {
+    props: {
+      companyName: "Next.js Blog",
+      pageName: "About",
+    },
+  };
+}
+export default function About({ companyName, pageName }) {
   return (
     <div>
-      <h1>Hello, Next JS About</h1>
-      <Link href={"/"}>Go Back</Link>
+      <h1>
+        Hello, {companyName} {pageName}
+      </h1>
+      <Link href={"/"}>Home</Link>
     </div>
   );
 }
